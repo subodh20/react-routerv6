@@ -1,0 +1,14 @@
+.ButtonType {
+  color: var(--text-color);
+  background-color: var(--button-background);
+  width: 200px;
+  height: 46px;
+}
+.Primary {
+  --text-color: #0000FF;
+  --button-background: #808080;
+}
+.Secondary {
+  --text-color: #fff;
+  --button-background: #880808;
+}
