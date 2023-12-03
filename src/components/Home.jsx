@@ -1,4 +1,5 @@
+import ToggleInput from "./ToggleInput";
 const Home = () => {
-  return <>I am From Home</>;
+  return <ToggleInput label={"toggle"} checked={true} />;
 };
 export default Home;

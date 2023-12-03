@@ -1,0 +1,64 @@
+/* Define styles for the container element */
+.ToggleInput {
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for the left side of the container */
+.Left {
+  display: flex;
+  flex-direction: column;
+}
+
+.Label {
+  /* Define styles for the label element */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.ToggleValue {
+  /* Define styles for the paragraph element */
+  font-style: italic;
+}
+
+/* Styles for the right side of the container */
+.Right {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.Input {
+  /* Define styles for the input element */
+  /* Add your common styles here */
+
+  /* Example styles for the checkbox input */
+  opacity: 0;
+  position: absolute;
+  left: -9000px;
+  top: -9000px;
+
+  > .CheckLabel {
+    display: flex;
+  }
+  &::before > .CheckLabel {
+    content: "";
+    width: 2em;
+    height: 1em;
+    background-color: red;
+  }
+
+  /* Add more styles as needed */
+}
+
+.Checked {
+  /* Define styles for the input when it's checked */
+  /* Add your styles to indicate the checkbox is checked */
+  /* Example: background-color: #00b300; */
+}
+
+.CheckLabel {
+  /* Define styles for the label associated with the checkbox */
+  cursor: pointer;
+  /* Add more styles as needed */
+}
